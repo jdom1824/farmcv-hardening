@@ -1,0 +1,16 @@
+{
+  "farm_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+  "cv": {
+    "schema_version": "1.0",
+    "identification": {"farmName": "Finca sintética de prueba"},
+    "location": {"municipality": "Municipio de prueba"},
+    "production": {"crop": "cacao"},
+    "quality": {},
+    "photos": [],
+    "documents": []
+  },
+  "polygon": {
+    "type": "Polygon",
+    "coordinates": [[[-74.0, 4.0], [-73.99, 4.0], [-73.99, 4.01], [-74.0, 4.0]]]
+  }
+}

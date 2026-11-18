@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Oriká: conoce el origen del cacao y explora las fichas digitales públicas de las fincas.">
+  <title>Oriká · {{TITLE}}</title>
+  <link rel="stylesheet" href="/assets/orika-home.css?v=palette-2026-11">
+</head>
+<body class="{{VIEW}}">
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="masthead">
+    <div class="shell mast-inner">
+      <a class="brand" href="/" aria-label="Oriká, inicio"><img src="{{LOGO}}" width="128" height="32" alt="Oriká"></a>
+      <nav aria-label="Navegación principal">
+        <a href="/"{{PROJECT_CURRENT}}>El proyecto</a>
+        <a href="/fincas"{{FARMS_CURRENT}}>Fincas</a>
+        <a class="admin-link" href="/admin"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 8V6a4 4 0 018 0v2M5 8h10a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1zm5 3v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Administración</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="shell">
+    <div class="project-content">
+      <section class="hero" aria-labelledby="project-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> Tras la huella del cacao</p>
+          <h1 id="project-title">Todo comienza<br>en la <em>finca.</em></h1>
+          <p class="lede">Conoce el origen del cacao colombiano a través de las fichas digitales de sus fincas: el territorio, las fotos y la información registrada.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="/fincas">Explorar fincas <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#como-funciona">Cómo funciona <span aria-hidden="true">↓</span></a>
+          </div>
+          {{ENVIRONMENT}}
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="territory-art" src="/assets/orika-territorio-v2.jpg" alt="">
+          <span class="art-top">ORIKÁ / TERRITORIO</span>
+          <div class="art-label"><span class="art-icon">◎</span><span><strong>Del territorio, el origen</strong><small>Cacao · Rionegro, Santander</small></span></div>
+        </div>
+      </section>
+      <section class="explain" id="como-funciona" aria-labelledby="explain-title">
+        <div class="section-intro"><p class="eyebrow"><i></i> El proyecto</p><h2 id="explain-title">Del territorio al registro digital</h2><p>Una ficha reúne la información autorizada de cada finca. Puedes consultarla y comprobar qué coincide con lo registrado en blockchain.</p></div>
+        <ol class="steps">
+          <li><span>01</span><div><h3>Explora el catálogo</h3><p>Encuentra fichas por nombre, municipio o departamento.</p></div></li>
+          <li><span>02</span><div><h3>Abre el CV de una finca</h3><p>Consulta su descripción, fotos y mapa cuando estén publicados.</p></div></li>
+          <li><span>03</span><div><h3>Verifica el registro</h3><p>Comprueba desde el CV si los documentos coinciden con sus huellas digitales registradas.</p></div></li>
+        </ol>
+      </section>
+    </div>
+    <div class="directory-content">
+      <section class="directory-intro" aria-labelledby="directory-title">
+        <p class="eyebrow"><i></i> Directorio público</p>
+        <h1 id="directory-title">Fincas de <em>cacao.</em></h1>
+        <p class="lede">Explora las fincas con un CV público. En cada ficha encontrarás la información autorizada y un acceso a la verificación del registro.</p>
+        {{ENVIRONMENT}}
+      </section>
+      <section class="catalog" aria-label="Catálogo de fincas">
+        <form class="search" action="/fincas" method="get" role="search">
+          <label for="query">Buscar fincas</label>
+          <div class="search-input"><input id="query" type="search" name="q" maxlength="120" value="{{QUERY}}" placeholder="Nombre, municipio o departamento"><button class="button primary" type="submit">Buscar</button></div>
+          <a class="text-link clear" href="/fincas">Ver todas</a>
+        </form>
+        {{NOTICE}}
+        <div class="farm-grid">{{CARDS}}</div>
+        <nav class="pagination" aria-label="Páginas del catálogo">{{PAGINATION}}</nav>
+      </section>
+    </div>
+  </main>
+  <footer class="shell footer"><span>Oriká · Tras la huella del cacao</span><a href="/admin">Acceso de administración</a></footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+:root {
+  --paper: #f4f5f2;
+  --ink: #203c30;
+  --muted: #6b766e;
+  --green: #234f3d;
+  --gold: #cb9859;
+  --line: #dde3dc;
+  --soft: #edf1ea;
+  --cacao: #763b34;
+  --danger: #a04435;
+}
+
+body {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+}
+
+.site-header,
+.login-card,
+.summary-stat,
+.card,
+.farm-card {
+  background-color: #fff !important;
+  border-color: var(--line) !important;
+}
+
+h1,
+h2,
+.fact-value {
+  color: var(--green) !important;
+}
+
+.trust-panel h2 {
+  color: var(--paper) !important;
+}
+
+.description,
+.hero-intro,
+.hero-location,
+.section-subtitle,
+.version,
+.toolbar p {
+  color: var(--muted) !important;
+}
+
+.eyebrow,
+.section-index {
+  color: var(--gold) !important;
+}
+
+.site-header,
+.farm-facts,
+.fact,
+#farm-map,
+.id {
+  border-color: var(--line) !important;
+}
+
+.trust-panel {
+  background-color: var(--green) !important;
+}
+
+.verify-button,
+.toolbar button,
+.cta {
+  background-color: var(--green) !important;
+  border-color: var(--green) !important;
+  color: #fff !important;
+}
+
+.verify-button:hover,
+.toolbar button:hover {
+  background-color: #193b2c !important;
+}
+
+.state-indicator {
+  color: #365d36 !important;
+  background-color: #eef4e8 !important;
+}
+
+.state-indicator.Suspended,
+.state-indicator.suspended {
+  color: #9d722c !important;
+  background-color: #faf1dd !important;
+}
+
+.state-indicator.Revoked,
+.state-indicator.revoked {
+  color: var(--danger) !important;
+  background-color: #faece8 !important;
+}
+
+.card h1 {
+  color: var(--cacao) !important;
+}
+
+.card .eyebrow {
+  color: var(--green) !important;
+}
